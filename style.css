@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -9,11 +9,9 @@
     outline: none;
     font-family: 'Poppins', sans-serif; 
 }
-
 html {
     font-size: 62.5%; 
 }
-
 body {
     width: 100%;
     height: 100vh;
@@ -21,7 +19,6 @@ body {
     background-color: black;
     color: white;
 }
-
 header {
     margin-top: 20px;
     position: fixed;
@@ -36,7 +33,6 @@ header {
     align-items: center;
     z-index: 100;
 }
-
 .logo {
     font-size: 20px; 
     color: purple;
@@ -44,11 +40,9 @@ header {
     cursor: pointer;
     transition: 0.5s ease;
 }
-
 .logo:hover {
     transform: scale(1.1);
 }
-
 nav a {
     font-size: 20px; 
     color: white;
@@ -57,13 +51,11 @@ nav a {
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
-
 nav a:hover,
 nav a:active {
     color: purple;
     border-bottom: 3px solid purple;
 }
-
 @media (max-width: 995px) {
     nav {
         position: absolute;
@@ -78,17 +70,14 @@ nav a:active {
         border-top: 0.1rem solid rgba(0, 0, 0, 1); 
         display: none; 
     }
-
     nav.active {
         display: block; 
     }
-
     nav a {
         display: block;
         font-size: 2rem;
         margin: 38px 0; 
     }
-
     nav a:hover,
     nav a.active {
         padding: 16px;
@@ -96,7 +85,6 @@ nav a:active {
         border-bottom: 0.5rem solid purple;
     }
 }
-
 .home {
     display: flex;
     justify-content: center;
@@ -105,17 +93,14 @@ nav a:active {
     background-color: black;
     padding-top: 120px; 
 }
-
 .home-content h1 {
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
 }
-
 span {
     color: purple;
 }
-
 .home-content h3 {
     font-size: 3.4rem;
     font-weight: 600;
@@ -123,7 +108,6 @@ span {
     display: inline-block;
     position: relative;
 }
-
 .typing-text span {
     border-right: 3px solid purple;
     white-space: nowrap;
@@ -132,16 +116,13 @@ span {
     vertical-align: bottom;
     animation: blinkCursor 0.7s steps(1) infinite;
 }
-
 @keyframes blinkCursor {
     0%, 50%, 100% { border-color: purple; }
     25%, 75% { border-color: transparent; }
 }
-
 .home-img {
     border-radius: 50%;
 }
-
 .home-img img {
     width: vh;
     border-radius: 50%;
@@ -149,11 +130,9 @@ span {
     cursor: pointer;
     transition: 0.3s ease;
 }
-
 .home-img img:hover {
     transform: scale(1.1);
 }
-
 .icons a {
     display: inline-flex;
     justify-content: center;
@@ -169,14 +148,12 @@ span {
     color: white;
     cursor: pointer;
 }
-
 .icons a:hover {
     color: black;
     background-color: purple;
     transform: translateY(-5px) scale(1.3);
     box-shadow: 0 0 25px purple;
 }
-
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -195,7 +172,6 @@ span {
     text-align: center;
     text-decoration: none;
 }
-
 .btn:hover {
     transform: scale3d(1.03);
     background-color: purple;
@@ -205,13 +181,11 @@ span {
     content: "Web Developer";
     animation: words 10s infinite;
 }
-
 @keyframes cursor{
     to{
         border-left: 3px solid black
     }
 }
-
 @keyframes words {
     0%, 20% {
         content: " Java  Programmer ";
@@ -229,64 +203,3 @@ span {
         content: "  Creative Person";
     }
 }
-@media (max-width: 768px) {
-    header {
-        padding: 16px 5%;
-    }
-
-    .home {
-        flex-direction: column; 
-        text-align: center;
-        gap: 30px;
-        padding-top: 100px; 
-    }
-
-    .home-content h1 {
-        font-size: 3.5rem; 
-    }
-
-    .home-content h3 {
-        font-size: 2rem;
-    }
-
-    .home-img img {
-        width: 220px; 
-        height: 220px;
-    }
-
-    .icons a {
-        margin: 1.5rem 1rem; 
-        width: 3.5rem;
-        height: 3.5rem;
-        font-size: 1.8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    nav {
-        width: 70%; 
-    }
-
-    .home-content h1 {
-        font-size: 3rem;
-    }
-
-    .home-content h3 {
-        font-size: 1.8rem;
-    }
-
-    .home-img img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .btn {
-        bottom: 20px;
-        right: 20px;
-        padding: 0.8rem 2rem;
-        font-size: 1.3rem;
-    }
-}
-
-
-
